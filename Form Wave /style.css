@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(8,8,8);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family:Arial, sans-serif;
+}
+
+.container{
+background-color: white;
+width: 400px;
+padding: 50px;
+border-radius: 8px;
+box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.container h1{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.special{
+  background-color: crimson;
+  color: white;
+  padding: 5px,15px;
+  border-radius: 4px;
+}
+
+.form-control{
+  position:relative;
+  margin:20px 0 40px ;
+  width: 300px;
+}
+
+.form-control input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid black;
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size:18px;
+  color:#000;
+}
+
+.form-control input{
+  outline: 0;
+  border-bottom-color: crimson;
+}
+.form-control label{
+  position:absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  font-size: 18px;
+}
+
+/* Login Button */
+.btn{
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  background-color: crimson;
+  color: #fff;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius:5px ;
+  transition:transform 0.1s ease ;
+}
+
+/* Button focus */
+.btn:focus{
+  outline: 0;
+}
+/* Button click */
+.btn{
+  transform: scale(0.98);
+}
+.btn {
+background-color: #b00020;
+}
+
+
+
+/* java Script  */
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.form-control input:focus + label span ,
+.form-control input:valid + label span {
+  color:crimson;
+  transform: translateY(-30px);
+}
